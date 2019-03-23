@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/note_id"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Send"
+        android:onClick="requestTitle"/>
+
+    <!-- array -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/json_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            />
+    </ScrollView>
+
+</LinearLayout>
